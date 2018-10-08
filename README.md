@@ -26,17 +26,6 @@ SHA256:FrqtIe723Y39pIENSIv65iem+IKYhuuc0BsI5YO6vkU gaoyong@wucar.com.cn
 
 The key's randomart image is:
 
-+---[RSA 2048]----+
-|                 |
-|                 |
-|  .     o        |
-| +     + +       |
-|o oE  o S .      |
-|oo.. . +   +     |
-|*oo.o o . . o .  |
-|Bo+=.o++.. + +   |
-|*B+==*=o. o +..  |
-+----[SHA256]-----+
 
 ### set the key on github
 
