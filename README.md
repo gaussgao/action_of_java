@@ -3,18 +3,15 @@ xdv in java implementation
 
 
 ## create ssh key and config git
-1. such as name and email 
+### such as name and email 
 
 git config --global user.name "gaoyong"
-
 git config --global user.email "gaoyong@wucar.com.cn"
 
-2. create ssh key
+### create ssh key
 
 ssh-keygen  -t rsa -C "gaoyong@wucar.com.cn"
-
 Enter file in which to save the key (/Users/gaoyong/.ssh/id_rsa): ./id_rsa_of_github_action_of_java
-
 Enter passphrase (empty for no passphrase): action_of_java
 
 Enter same passphrase again: action_of_java
@@ -41,4 +38,9 @@ The key's randomart image is:
 |*B+==*=o. o +..  |
 +----[SHA256]-----+
 
-3. set the key on github
+### set the key on github
+
+### test 
+
+ssh -i id_rsa_of_github_action_of_java -T git@github.com
+
