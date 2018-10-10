@@ -9,4 +9,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+   
+    <servlet-mapping>
+    <servlet-name>CHelloServlet</servlet-name>
+    <url-pattern>/h1</url-pattern>
+    </servlet-mapping>
+    
+    
 </web-app>
