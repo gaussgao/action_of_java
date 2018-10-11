@@ -9,9 +9,9 @@
 <body>
 
 
-	r= ${CC.getRedius()} <br/>
-	C=${CC.getLength()}<br/>
-	A=${CC.getArea()}<br/>
+r = ${CC.getRedius()} <br/>
+C = ${CC.getLength()} <br/>
+A = ${CC.getArea()} <br/>
 	
 	
 	

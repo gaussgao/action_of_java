@@ -4,9 +4,7 @@
     
     String path = request.getContextPath();
     
-    String basePath = request.getScheme() + "://" + request.getServerName()+":"+request.getServerPort() + path + "/";
-    
-    
+    String basePath = request.getScheme() + "://" + request.getServerName()+":"+request.getServerPort() + path + "/";   
     
     %>
 <!DOCTYPE html>
@@ -18,9 +16,11 @@
 <body>
 Hello , this is my first jsp file! <br>
 
-basePath = <% out.print(basePath); %> <br>
+basePath = <% out.print(basePath); %> <br />
 
-<a href="./circle.jsp"> ./circle.jsp </a>
+<a href="./circle.jsp"> ./circle.jsp </a> <br />
+<a href="./mvc_1.jsp"> ./mvc_1.jsp </a> <br />
+<a href="./db_user.jsp"> ./db_user.jsp </a> <br />
 
 
 </body>
