@@ -32,12 +32,21 @@ public class CHelloServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		CCalculator obj = new CCalculator();
 		
-		obj.setRedius(2.0);
+		if(null != request.getParameter("r"))
+		{
+			
+			obj.setRedius(Double.valueOf(request.getParameter("r")));
+			request.getSession().setAttribute("CC", obj);
+			
+			response.sendRedirect(request.getContextPath()+"/mvc_1_res.jsp");
 		
+		}
+		else
+		{
+			response.sendRedirect(request.getContextPath()+"/mvc_1.jsp");
+		}
 		
-		
-		
-		response.getWriter().append("Served at: ").append(request.getContextPath()).append(String.valueOf(obj.getArea()));
+		//response.getWriter().append("Served at: ").append(request.getContextPath()).append(String.valueOf(obj.getArea()));
 	}
 
 	/**
