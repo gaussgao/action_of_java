@@ -31,7 +31,7 @@ public class Case1 {
 			
 			
 			
-			hd.User adduser = new hd.User("Sky11","333","409169399@qq.com","xiamen_sh");
+			hd.User adduser = new hd.User("Sky1551","35533","409169399@qq.com","xiamen_sh55");
 			
 			Transaction trans = ses.beginTransaction();
 			
