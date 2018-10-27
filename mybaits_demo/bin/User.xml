@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="User">
+  <select id="selectUser" resultType="mybaits_demo.User">
+    select * from user where USERID = #{id} limit 1
+  </select>
+  <insert id="insert" parameterType="mybaits_demo.User">
+    insert into user(userid,username,password,email,address) values
+    (#{userId,jdbcType=INTEGER},#{userName,jdbcType=VARCHAR},#{password,jdbcType=VARCHAR},#{email,jdbcType=VARCHAR},#{address,jdbcType=VARCHAR});
+  </insert>
+</mapper>
